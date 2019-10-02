@@ -99,8 +99,8 @@ resources:
       service_account_key: ((gcp.gcp_service_account))
       buckets_location: ((gcp.buckets_location))
       dns_suffix: ((gcp.parent_zone.dns_suffix))
-      opsman_vm: false
-      opsman_image_url: ""
+      opsman_vm: true
+      opsman_image_url: "ops-manager-us/pcf-gcp-2.6.11-build.210.tar.gz"
       parent_managed_zone: ((gcp.parent_zone.name))
       email: ((email))
 
